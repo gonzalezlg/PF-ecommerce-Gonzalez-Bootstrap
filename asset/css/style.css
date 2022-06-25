@@ -79,21 +79,17 @@ div .footerIframe{
     font-weight: bold;
 }
 
-
-
 @media (min-width:1200px){
 
     /*El grid es igual ya que no modifican las ubiucaciones de las partes del contenedor general*/
-    /*Lo unico que se modifica es la ubicacion de los prodcutos*/
+    /*Lo unico que se modifica es la ubicacion de los productos*/
     /*y cuando utilicemnos boostrap voy a modificar el header y menu para la version mobile*/
     
     .footer{
         display: flex;
         flex-direction: row;
-
         justify-content: space-between;
     }
-
 }
 
 
