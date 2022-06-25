@@ -1,0 +1,99 @@
+/*Reseteo*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Estilos para las card cuando se pasa por encima*/
+
+.tarjeta:hover{
+    border: 3px solid #000;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+
+/*Footer*/  /*El footer no lo sacamos de Bootstrap, se generó de 0, como así tambien sus estilos*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+.linkFooter{
+    display: flex;
+    list-style: none;
+    margin: 20px 15px;
+}
+
+.linkFooter a {
+    color: #000; /*#37b611*/
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+.footer a:hover{
+    font-size: 1.5em;
+    margin:0; 
+}
+
+.footerIframe{
+    width: 100%;
+    height: 95%;
+    
+}
+
+div .footerIframe{
+    margin: 15px 0;
+}
+
+.redesFooter{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-top: 25px;
+}
+
+.redesFooter h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.redesFooter a{
+    margin:0 5px ;
+}
+
+.redesFooter img:hover{
+    width: 25px;
+    height: 25px;
+}
+
+.telFooter{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+
+@media (min-width:1200px){
+
+    /*El grid es igual ya que no modifican las ubiucaciones de las partes del contenedor general*/
+    /*Lo unico que se modifica es la ubicacion de los prodcutos*/
+    /*y cuando utilicemnos boostrap voy a modificar el header y menu para la version mobile*/
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+
+}
+
+
