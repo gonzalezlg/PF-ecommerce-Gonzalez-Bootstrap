@@ -9,6 +9,9 @@
     <!--FAVICON-->
     <link  rel="icon"   href="../asset/img/logo.png" type="image/png" />
 
+    <!--Animaciones AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS only  Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -25,7 +28,7 @@
 
             <nav class="navbar navbar-expand-lg bg-success mb-2">
                 <div class="container-fluid">
-                  <a class="navbar-brand col-lg-2 " href="#"><img class="w-25 rounded-circle" src="../asset/img/logo.png" alt=""></a>
+                  <a class="navbar-brand col-lg-2 " href="../index.html"><img class=" logo w-25 rounded-circle" src="../asset/img/logo.png" alt=""></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -65,7 +68,7 @@
 
     <!-- Fila para la imagen principal de cada seccion-->
 
-    <div class="row">
+      <div class="row" data-aos="fade-right" data-aos-delay="200">
         <div class="col-12">
           <div id="carouselExampleSlidesOnly" class="carousel slide"  data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -81,7 +84,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div>  
     <!-- Fin para la imagen principal (carosul) de cada seccion-->
 
 
@@ -227,6 +230,12 @@
     </div>
     
     <!-- Fin Fila para footer-->
+
+    <!--JS para animaciones AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
