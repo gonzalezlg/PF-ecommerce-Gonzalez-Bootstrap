@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 /*Estilos para las card cuando se pasa por encima*/
 
 .tarjeta:hover{
@@ -82,6 +81,8 @@ div .footerIframe{
 
 
 /* ********* ANIMACIONES ***************/
+/*Tambien se agregaron animaciones con AOS por lo cual no figuran en el CSS, si no que ya se encuentra aplicadas
+a los elementos dentro del html, como por ejemplo a las imagenes principales del carousel*/
 
 /*Header*/
 .logo{ 
