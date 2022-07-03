@@ -1,0 +1,6 @@
+/*Estilos para las card cuando se pasa por encima*/
+.tarjeta:hover{
+    border: 3px solid $colorLink;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
