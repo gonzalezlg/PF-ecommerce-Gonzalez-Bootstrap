@@ -1,7 +1,17 @@
 /*Footer*/  /*El footer no lo sacamos de Bootstrap, se generó de 0, como así tambien sus estilos*/
-.footer{
+
+/*Se crea mixin para reutilizar el display flex y flex-direction del footer ya que utilizan las mias propiedades*/
+
+@mixin flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
+ }
+
+
+.footer{
+    /* display: flex;
+    flex-direction: column; */
+    @include flex;
     align-items: center;
 
     padding: 10px 20px;
@@ -29,8 +39,9 @@
     }
 
     .redesFooter{
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        @include flex;
         color: $colorLink;
         margin-top: 25px;
         h3{

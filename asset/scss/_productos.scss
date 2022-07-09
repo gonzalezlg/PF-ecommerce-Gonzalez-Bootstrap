@@ -1,6 +1,57 @@
 /*Estilos para las card cuando se pasa por encima*/
-.tarjeta:hover{
+/* .tarjeta:hover{
     border: 3px solid $colorLink;
     margin-bottom: 0px;
     cursor: pointer;
+} */
+
+
+
+
+$box:  (                 /*map para los estilos de las tarjetas*/
+cLetra: #000,
+sizeLetra: 25px,
+alineado: center,
+redondo: 20px,
+pad: 15px,
+margen: 15px
+);
+
+
+/*Se realiza map-get()*/
+.tarjeta{
+        color: map-get($box, cLetra);
+        font-size: map-get($box, sizeLetra);
+        text-align: map-get($box, alineado);
+        padding: map-get($box, pad);
+        margin: map-get($box, margen);
+        border-radius: map-get($box, redondo);
+        &:hover{
+            border: 3px solid $colorLink;
+            margin-bottom: 0px;
+            cursor: pointer;                      
+        }
+        }
+
+        /*Modificamos algunos propiedades de la clase btn*/
+.btn{
+    background-color: rgb(23, 104, 23);
+    color: white;
+    &:hover{
+        background-color: rgb(26, 63, 26);
+        box-shadow: 2px 2px 2px black inset;
+        color: white;
+    }
+}
+
+/*Reutilizamos la clase btn y extendemos para agregar propiedades a los botones del formulario del contacto*/
+
+.btn-contacto{
+    @extend .btn;
+    background-color: rgb(67, 196, 55);
+    padding: 10px 30px;
+    &:hover{
+        background-color: rgb(17, 122, 61);
+        color: white;
+    }
 }

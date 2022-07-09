@@ -9,15 +9,53 @@
 /*Variables*/
 /*Se crea esta variable para cumplior con las consignas del desafio ya que no haria falta porqueno se reutiliza muchas veces*/
 /*Estilos para las card cuando se pasa por encima*/
+/* .tarjeta:hover{
+    border: 3px solid $colorLink;
+    margin-bottom: 0px;
+    cursor: pointer;
+} */
+/*Se realiza map-get()*/
+.tarjeta {
+  color: #000;
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 20px;
+}
 .tarjeta:hover {
   border: 3px solid #000;
   margin-bottom: 0px;
   cursor: pointer;
 }
 
+/*Modificamos algunos propiedades de la clase btn*/
+.btn, .btn-contacto {
+  background-color: rgb(23, 104, 23);
+  color: white;
+}
+.btn:hover, .btn-contacto:hover {
+  background-color: rgb(26, 63, 26);
+  box-shadow: 2px 2px 2px black inset;
+  color: white;
+}
+
+/*Reutilizamos la clase btn y extendemos para agregar propiedades a los botones del formulario del contacto*/
+.btn-contacto {
+  background-color: rgb(67, 196, 55);
+  padding: 10px 30px;
+}
+.btn-contacto:hover {
+  background-color: rgb(17, 122, 61);
+  color: white;
+}
+
 /*Footer*/
 /*El footer no lo sacamos de Bootstrap, se generó de 0, como así tambien sus estilos*/
+/*Se crea mixin para reutilizar el display flex y flex-direction del footer ya que utilizan las mias propiedades*/
 .footer {
+  /* display: flex;
+  flex-direction: column; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +83,8 @@
   margin: 15px 0;
 }
 .footer .redesFooter {
+  /* display: flex;
+  flex-direction: column; */
   display: flex;
   flex-direction: column;
   color: #000;
