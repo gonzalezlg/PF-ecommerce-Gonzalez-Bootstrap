@@ -1,0 +1,5 @@
+En el archivo index.html sumé el SEO con las siguientes caracteristicas
+ - Se agrega a cada sección las keywords las cuales identifcan al sitio Web de SportNet.
+ - Se suma mediante de la etiqueta "description", la descripción de cada sección de la web, cada una tiene su propio detalle, que se ubica y que se puede encontrar en cada una de ellas.
+ - Mediante la etiqueta Title en el head se identifica cada una de nuestras secciones.
+ - Se corrige y se pone el nombre de cada sección dentro de un H1, para destacar y que los usuarios y buscadores puedan identificar cada una de ellas.
