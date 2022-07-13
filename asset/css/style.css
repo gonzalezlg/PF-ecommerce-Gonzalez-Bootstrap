@@ -22,11 +22,18 @@
   padding: 15px;
   margin: 15px;
   border-radius: 20px;
+  box-shadow: 1px 1px 1px rgb(70, 69, 69);
 }
 .tarjeta:hover {
-  border: 3px solid #000;
   margin-bottom: 0px;
+  padding: 0;
   cursor: pointer;
+  box-shadow: 2px 2px 2px rgb(70, 69, 69) inset;
+  transition: all 50ms;
+}
+.tarjeta img {
+  /* background-color: rgba(245, 244, 244, 0.938); */
+  border-radius: 25%;
 }
 
 /*Modificamos algunos propiedades de la clase btn*/

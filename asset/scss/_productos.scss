@@ -26,10 +26,17 @@ margen: 15px
         padding: map-get($box, pad);
         margin: map-get($box, margen);
         border-radius: map-get($box, redondo);
+        box-shadow: 1px 1px 1px rgb(70, 69, 69);
         &:hover{
-            border: 3px solid $colorLink;
             margin-bottom: 0px;
-            cursor: pointer;                      
+            padding: 0;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px rgb(70, 69, 69) inset;
+            transition: all 50ms;
+        }
+        img{
+            /* background-color: rgba(245, 244, 244, 0.938); */
+            border-radius: 25%;
         }
         }
 
