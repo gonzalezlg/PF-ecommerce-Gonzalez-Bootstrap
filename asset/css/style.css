@@ -50,8 +50,7 @@
   color: white;
 }
 
-/*Footer*/
-/*El footer no lo sacamos de Bootstrap, se generó de 0, como así tambien sus estilos*/
+/*Footer*/ /*El footer no lo sacamos de Bootstrap, se generó de 0, como así tambien sus estilos*/
 /*Se crea mixin para reutilizar el display flex y flex-direction del footer ya que utilizan las mias propiedades*/
 .footer {
   /* display: flex;
@@ -67,8 +66,7 @@
   margin: 20px 15px;
 }
 .footer .linkFooter a {
-  color: #000;
-  /*#37b611*/
+  color: #000; /*#37b611*/
   text-decoration: none;
   margin: 0 5px;
   font-weight: 500;

@@ -7,13 +7,11 @@
     flex-direction: column;   
  }
 
-
 .footer{
     /* display: flex;
     flex-direction: column; */
     @include flex;
     align-items: center;
-
     padding: 10px 20px;
 
     .linkFooter{
