@@ -1,14 +1,5 @@
-/*Estilos para las card cuando se pasa por encima*/
-/* .tarjeta:hover{
-    border: 3px solid $colorLink;
-    margin-bottom: 0px;
-    cursor: pointer;
-} */
-
-
-
-
-$box:  (                 /*map para los estilos de las tarjetas*/
+/*map para los estilos de las tarjetas*/
+$box:  (                 
 cLetra: #000,
 sizeLetra: 25px,
 alineado: center,
@@ -35,7 +26,6 @@ margen: 15px
             transition: all 50ms;
         }
         img{
-            /* background-color: rgba(245, 244, 244, 0.938); */
             border-radius: 25%;
         }
         }

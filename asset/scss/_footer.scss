@@ -8,8 +8,6 @@
  }
 
 .footer{
-    /* display: flex;
-    flex-direction: column; */
     @include flex;
     align-items: center;
     padding: 10px 20px;
@@ -37,8 +35,6 @@
     }
 
     .redesFooter{
-        /* display: flex;
-        flex-direction: column; */
         @include flex;
         color: $colorLink;
         margin-top: 25px;

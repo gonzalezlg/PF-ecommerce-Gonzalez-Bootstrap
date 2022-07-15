@@ -6,14 +6,7 @@
   box-sizing: border-box;
 }
 
-/*Variables*/
-/*Se crea esta variable para cumplior con las consignas del desafio ya que no haria falta porqueno se reutiliza muchas veces*/
-/*Estilos para las card cuando se pasa por encima*/
-/* .tarjeta:hover{
-    border: 3px solid $colorLink;
-    margin-bottom: 0px;
-    cursor: pointer;
-} */
+
 /*Se realiza map-get()*/
 .tarjeta {
   color: #000;
@@ -32,7 +25,6 @@
   transition: all 50ms;
 }
 .tarjeta img {
-  /* background-color: rgba(245, 244, 244, 0.938); */
   border-radius: 25%;
 }
 
