@@ -8,6 +8,29 @@ pad: 15px,
 margen: 15px
 );
 
+/*Se genera estas clases para poder diferenciar las tarjetas de cada seccion*/
+
+.tarjeta--oferta{
+    border: 5px outset rgba(247,39,12,0.42);
+    border-radius: 25px 25px 25px 25px;
+    
+}
+
+.tarjeta--hombre{
+    border: 5px outset rgba(42,60,247,0.35);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.tarjeta--mujer{
+    border: 5px outset rgba(197,74,247,0.42);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.tarjeta--ninos{
+    border: 5px outset rgba(42,247,44,0.42);
+    border-radius: 25px 25px 25px 25px;
+}
+
 
 /*Se realiza map-get()*/
 .tarjeta{
@@ -22,7 +45,7 @@ margen: 15px
             margin-bottom: 0px;
             padding: 0;
             cursor: pointer;
-            box-shadow: 2px 2px 2px rgb(70, 69, 69) inset;
+            /* box-shadow: 2px 2px 2px rgb(70, 69, 69) inset; */
             transition: all 50ms;
         }
         img{
@@ -51,4 +74,17 @@ margen: 15px
         background-color: rgb(17, 122, 61);
         color: white;
     }
+}
+
+/*Estilos para el cartel de Oferta, para agregarle algo mas quie diferencia a las tarjetas de otras secciones*/
+.cartel-oferta{
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+    padding: 0px;
+    font-size: 17px;
+    position: relative;
+    top: 6px;
+    left: 190px;
+    padding: 5px 0px;
 }

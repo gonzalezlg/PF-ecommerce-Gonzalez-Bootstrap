@@ -6,6 +6,29 @@
   box-sizing: border-box;
 }
 
+/*Variables*/
+/*Se crea esta variable para cumplior con las consignas del desafio ya que no haria falta porqueno se reutiliza muchas veces*/
+/*map para los estilos de las tarjetas*/
+/*Se genera estas clases para poder diferenciar las tarjetas de cada seccion*/
+.tarjeta--oferta {
+  border: 5px outset rgba(247, 39, 12, 0.42);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.tarjeta--hombre {
+  border: 5px outset rgba(42, 60, 247, 0.35);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.tarjeta--mujer {
+  border: 5px outset rgba(197, 74, 247, 0.42);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.tarjeta--ninos {
+  border: 5px outset rgba(42, 247, 44, 0.42);
+  border-radius: 25px 25px 25px 25px;
+}
 
 /*Se realiza map-get()*/
 .tarjeta {
@@ -21,7 +44,7 @@
   margin-bottom: 0px;
   padding: 0;
   cursor: pointer;
-  box-shadow: 2px 2px 2px rgb(70, 69, 69) inset;
+  /* box-shadow: 2px 2px 2px rgb(70, 69, 69) inset; */
   transition: all 50ms;
 }
 .tarjeta img {
@@ -49,11 +72,22 @@
   color: white;
 }
 
+/*Estilos para el cartel de Oferta, para agregarle algo mas quie diferencia a las tarjetas de otras secciones*/
+.cartel-oferta {
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  padding: 0px;
+  font-size: 17px;
+  position: relative;
+  top: 6px;
+  left: 190px;
+  padding: 5px 0px;
+}
+
 /*Footer*/ /*El footer no lo sacamos de Bootstrap, se generó de 0, como así tambien sus estilos*/
 /*Se crea mixin para reutilizar el display flex y flex-direction del footer ya que utilizan las mias propiedades*/
 .footer {
-  /* display: flex;
-  flex-direction: column; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,8 +114,6 @@
   margin: 15px 0;
 }
 .footer .redesFooter {
-  /* display: flex;
-  flex-direction: column; */
   display: flex;
   flex-direction: column;
   color: #000;
