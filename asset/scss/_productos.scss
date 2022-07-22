@@ -8,6 +8,11 @@ pad: 15px,
 margen: 15px
 );
 
+/*Clase para sacar categoria de oferta*/
+.noOferta{
+    display: none;
+}
+
 /*Se genera estas clases para poder diferenciar las tarjetas de cada seccion*/
 
 .tarjeta--oferta{
@@ -41,6 +46,7 @@ margen: 15px
         margin: map-get($box, margen);
         border-radius: map-get($box, redondo);
         box-shadow: 1px 1px 1px rgb(70, 69, 69);
+        position: relative;                                     /**************/
         &:hover{
             margin-bottom: 0px;
             padding: 0;
@@ -83,7 +89,7 @@ margen: 15px
     color: white;
     padding: 0px;
     font-size: 17px;
-    position: relative;
+    position: absolute;
     top: 6px;
     left: 190px;
     padding: 5px 0px;

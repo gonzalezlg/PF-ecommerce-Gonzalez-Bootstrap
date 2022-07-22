@@ -9,6 +9,11 @@
 /*Variables*/
 /*Se crea esta variable para cumplior con las consignas del desafio ya que no haria falta porqueno se reutiliza muchas veces*/
 /*map para los estilos de las tarjetas*/
+/*Clase para sacar categoria de oferta*/
+.noOferta {
+  display: none;
+}
+
 /*Se genera estas clases para poder diferenciar las tarjetas de cada seccion*/
 .tarjeta--oferta {
   border: 5px outset rgba(247, 39, 12, 0.42);
@@ -39,6 +44,7 @@
   margin: 15px;
   border-radius: 20px;
   box-shadow: 1px 1px 1px rgb(70, 69, 69);
+  position: relative; /**************/
 }
 .tarjeta:hover {
   margin-bottom: 0px;
@@ -79,7 +85,7 @@
   color: white;
   padding: 0px;
   font-size: 17px;
-  position: relative;
+  position: absolute;
   top: 6px;
   left: 190px;
   padding: 5px 0px;
