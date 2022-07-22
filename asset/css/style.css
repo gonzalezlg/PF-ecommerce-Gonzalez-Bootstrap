@@ -170,4 +170,27 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+main .header {
+  border-bottom: 1px solid rgb(216, 215, 215);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main .nosotros {
+  align-items: center;
+  border-bottom: 1px solid rgb(216, 215, 215);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+main .reglas {
+  padding: 1rem;
+}
+main .reglas .compra {
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
+}
+main .reglas .stock {
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
