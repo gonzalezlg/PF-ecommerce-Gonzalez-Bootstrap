@@ -1,0 +1,30 @@
+.main{
+    
+
+    .sucursales{
+       justify-content: center;
+        h4{
+            margin: 2rem;
+            padding-bottom: 1rem;
+            font-size: 19px;
+            border-bottom: 1px solid rgb(206, 204, 204);
+        }
+        .sucursal{
+            justify-content: center;
+            padding: 1rem;
+            margin: 0px 1rem;
+            margin-bottom: 1.5rem;           
+            border-bottom: 1px solid rgb(194, 192, 192);
+            background-color: rgb(245, 243, 243);
+            align-items: center;
+            &:hover{
+                background-color: rgb(182, 245, 182);
+            }
+    
+            .datosSuc{
+                margin-top: 2rem;
+                font-size: 13px;
+            }
+        }
+    } 
+}
