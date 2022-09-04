@@ -24,35 +24,35 @@ const productos = [
 
 
 // Calcular cuotas sobre la compra sumandole interes segun la cantidad de cuotas
-function calcularPagoCuotas() {
-    let total;
-    let subTotal = parseInt(prompt(`Subtotal`));
-    let cantCuotas = parseInt(prompt(`Cuotas`));
-
-    switch (cantCuotas) {
-        case 3: // 3 cuotas
-            total = subTotal + (subTotal*0.10) // 10% DE interes
+const calcularPagoCuotas = (a, b) =>  {
+    
+    switch (b) {
+        case `3`: // 3 cuotas
+            return a + (a*0.10) // 10% DE interes
             break;
-        case 6: // 6 cuotas
-        total = subTotal + (subTotal*0.20) // 20% DE interes
+        case `6`: // 6 cuotas
+            return a + (a*0.20) // 20% DE interes
             break;
-        case 12: // 12 cuotas
-        total = subTotal + (subTotal*0.30) // 30% DE interes
+        case `12`: // 12 cuotas
+            return a + (a*0.30) // 30% DE interes
             break;
     
         default: // en el caso que pague en una sola cuotas o en efectivo
-        total = subTotal - (subTotal*0.10) // 10% de descuento
+            return a - (a*0.10) // 10% de descuento
             break;
     }
-    console.log(total)
 }
-//calcularPagoCuotas()
+
+let cantCuotas = prompt(`Cuotas`);
+let subTotal = parseInt(prompt(`Subtotal`));
+let totalPagar = calcularPagoCuotas(subTotal, cantCuotas);
+console.log(totalPagar);
+
 
 
 
 
 // productos que estan de oferta
-
 const productosEnOferta  = (arr) => {
     const listadoProductoOferta = arr.filter(item => item.oferta === true);
     console.log(listadoProductoOferta);
